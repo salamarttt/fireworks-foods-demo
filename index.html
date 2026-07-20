@@ -114,6 +114,8 @@ header.solid .nav-links a{color:var(--char); opacity:.8}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .firemark .fl-in{transform-box:fill-box; transform-origin:center bottom; animation:flick 2.6s ease-in-out infinite}
 @keyframes flick{0%,100%{transform:scaleY(1); opacity:.9}50%{transform:scaleY(1.09); opacity:1}}
+.hero-logo{width:100%; max-width:430px; margin-inline:auto; display:block;
+  filter:drop-shadow(0 22px 55px rgba(234,90,27,.45)); animation:floaty 6s ease-in-out infinite}
 .scroll-cue{position:absolute; bottom:2rem; left:50%; transform:translateX(-50%);
   font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; opacity:.6; z-index:3}
 .scroll-cue span{display:block; width:1px; height:34px; margin:.6rem auto 0;
@@ -245,7 +247,7 @@ section.pad{padding:clamp(5rem,11vw,9rem) 0}
 /* =================== FOOTER =================== */
 footer{background:var(--char); color:var(--cream); padding:5rem 0 2rem; overflow:hidden}
 .foot-top{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:2.5rem; padding-bottom:3rem}
-.foot-logo{width:170px; height:auto; margin-bottom:1.3rem; mix-blend-mode:lighten}
+.foot-logo{width:190px; height:auto; margin-bottom:1.3rem}
 .foot-cta h3{font-size:1.6rem; margin-bottom:.8rem}
 .foot-cta p{opacity:.7; margin-bottom:1.4rem; max-width:34ch}
 .news{display:flex; gap:.6rem; max-width:360px}
@@ -317,32 +319,8 @@ footer{background:var(--char); color:var(--cream); padding:5rem 0 2rem; overflow
         <a href="#pantry" class="btn ghost" style="color:var(--cream)">See the range</a>
       </div>
     </div>
-    <!-- ASSET: reemplazar por FOTO/VIDEO real (salsas, chiles, tortilla en el comal — "el sabor de verdad") -->
     <div class="hero-media reveal in" aria-hidden="true">
-      <div class="hm-frame">
-        <svg class="firemark" viewBox="0 0 300 210" fill="none">
-          <defs>
-            <linearGradient id="flOut" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0" stop-color="#B62F1C"/><stop offset=".55" stop-color="#EA5A1B"/><stop offset="1" stop-color="#F2B705"/>
-            </linearGradient>
-            <linearGradient id="flIn" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0" stop-color="#EA5A1B"/><stop offset="1" stop-color="#FBD24C"/>
-            </linearGradient>
-            <radialGradient id="chG" cx=".36" cy=".28" r=".95">
-              <stop offset="0" stop-color="#E24B2E"/><stop offset=".6" stop-color="#C4331D"/><stop offset="1" stop-color="#8E2416"/>
-            </radialGradient>
-          </defs>
-          <path fill="url(#flOut)" d="M48 176 C34 150 48 128 64 138 C60 108 82 100 92 126 C96 96 118 90 128 120 C136 90 160 86 172 118 C182 92 206 96 216 122 C228 100 250 108 252 132 C266 128 274 152 262 176 C240 190 70 192 48 176 Z"/>
-          <path class="fl-in" fill="url(#flIn)" d="M92 174 C86 148 100 130 112 140 C116 116 136 112 144 134 C152 112 172 112 180 134 C190 118 206 122 210 142 C220 152 214 168 200 174 C168 184 108 184 92 174 Z"/>
-          <g transform="rotate(15 150 118)">
-            <path fill="#5C7A4E" d="M64 116 C56 104 44 100 36 106 C46 106 52 112 58 120 Z"/>
-            <path stroke="#5C7A4E" stroke-width="4.5" stroke-linecap="round" d="M40 106 C36 96 39 88 46 86"/>
-            <path fill="url(#chG)" d="M62 120 C100 100 152 100 198 114 C210 118 222 122 231 128 C221 131 210 131 198 131 C152 138 100 138 80 136 C70 135 60 130 60 124 C60 121 61 120 62 120 Z"/>
-            <path stroke="rgba(255,255,255,.5)" stroke-width="4.5" stroke-linecap="round" d="M84 114 C120 106 160 108 196 118"/>
-          </g>
-        </svg>
-        <span class="hm-label">Hero photo / video<br><b>the real taste of Mexico 🔥</b></span>
-      </div>
+      <img class="hero-logo" src="assets/logo-cutout.png" alt="Fireworks Foods">
     </div>
   </div>
   <div class="scroll-cue">Scroll<span></span></div>
@@ -490,7 +468,7 @@ footer{background:var(--char); color:var(--cream); padding:5rem 0 2rem; overflow
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-cta">
-        <img class="foot-logo" src="assets/logo.png" alt="Fireworks Foods">
+        <img class="foot-logo" src="assets/logo-cutout.png" alt="Fireworks Foods">
         <h3>Get the fresh drop 🔥</h3>
         <p>Fresh bakes, new arrivals, and the odd fiery deal — straight to your inbox.</p>
         <form class="news" onsubmit="return false">
